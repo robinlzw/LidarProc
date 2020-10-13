@@ -16,12 +16,26 @@
 
 #pragma warning(disable : 4996)
 
+
+template<class T> 
+const T& my_min(const T& a, const T& b)
+{
+    return (b < a) ? b : a;
+}
+
+template<class T> 
+const T& my_max(const T& a, const T& b)
+{
+    return (b < a) ? a : b;
+}
+
+
 #define ASSERT assert // RTree uses ASSERT( condition )
 #ifndef Min
-#define Min min
+#define Min my_min
 #endif //Min
 #ifndef Max
-#define Max max
+#define Max my_max
 #endif //Max
 
 //

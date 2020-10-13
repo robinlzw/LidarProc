@@ -1,0 +1,4 @@
+1.conflict with eigen::min(/max) in src/LidarGeometry/RTree.hpp
+2.#include <opencv2/imgproc.hpp> cannot found, so install OpenCV 4.1.0, and change relation CMakeLists that's src/LidarAlgorithm/CMakeLists.txt
+
+
